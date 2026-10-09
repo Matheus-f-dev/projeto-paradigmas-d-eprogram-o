@@ -1,0 +1,66 @@
+/* Tokens visuais de "Crônicas da Cidadela": fantasia medieval sombria. */
+:root {
+  /* Superfícies: carvão e pedra */
+  --carvao: #0b0807;
+  --pedra-1: #120e0c;
+  --pedra-2: #1a1411;
+  --pedra-3: #251c17;
+  --pedra-4: #33271f;
+
+  /* Acentos: vinho, bronze e ouro envelhecido */
+  --vinho-escuro: #3a0f13;
+  --vinho: #5e1a20;
+  --vinho-claro: #8f2b30;
+  --bronze: #8c5a2b;
+  --bronze-claro: #b47a3c;
+  --ouro: #c9a25a;
+  --ouro-claro: #e8cc8a;
+  --ouro-brilho: #fff0c2;
+
+  /* Texto */
+  --pergaminho: #ecdfc4;
+  --texto: #e6d8bd;
+  --texto-suave: #b9a98b;
+  --texto-fraco: #857661;
+
+  /* Cores mágicas e de estado */
+  --fogo: #ff7a2f;
+  --fogo-claro: #ffc06a;
+  --cura: #7fe08a;
+  --mana: #5aa8ff;
+  --furia: #e0483a;
+  --flechas: #d9c08a;
+  --sombrio: #a26bff;
+  --necrotico: #6fdc86;
+  --perigo: #e5534b;
+
+  /* Tipografia */
+  --fonte-titulo: 'Cinzel Decorative', 'Cinzel', 'Times New Roman', 'Noto Serif SC', 'Microsoft YaHei', serif;
+  --fonte-rotulo: 'Cinzel', 'Times New Roman', 'Noto Serif SC', 'Microsoft YaHei', serif;
+  --fonte-texto: 'EB Garamond', Georgia, 'Noto Serif SC', 'Microsoft YaHei', 'SimSun', serif;
+  --fonte-codigo: 'Cascadia Code', 'Consolas', 'Courier New', monospace;
+
+  /* Escala */
+  --raio: 4px;
+  --raio-grande: 10px;
+  --borda-ouro: 1px solid rgba(201, 162, 90, 0.32);
+  --borda-ouro-forte: 1px solid rgba(232, 204, 138, 0.6);
+  --sombra-painel: 0 18px 50px rgba(0, 0, 0, 0.55), 0 2px 0 rgba(255, 240, 194, 0.04) inset;
+  --brilho-ouro: 0 0 18px rgba(232, 204, 138, 0.35);
+
+  /* Movimento */
+  --duracao-rapida: 160ms;
+  --duracao-media: 320ms;
+  --duracao-lenta: 700ms;
+  --curva-saida: cubic-bezier(0.16, 1, 0.3, 1);
+  --curva-entrada: cubic-bezier(0.7, 0, 0.84, 0);
+
+  /* Textura de ruído (pedra/pergaminho), gerada inline sem recursos externos */
+  --textura-ruido: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.55 0 0 0 0 0.45 0 0 0 0 0.35 0 0 0 0.09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+:root[data-movimento='reduzido'] {
+  --duracao-rapida: 60ms;
+  --duracao-media: 120ms;
+  --duracao-lenta: 200ms;
+}
